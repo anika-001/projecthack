@@ -1,0 +1,44 @@
+body {
+  padding-top: 10vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #c322a0;
+  background: url("../../assets/images/footprintback.png");
+  background-attachment: fixed;
+  color: #153434;
+  text-align: center;
+  opacity: 0.5;
+}
+
+img {
+  border-radius: 50%;
+  width: 100px;
+}
+
+.button {
+  opacity: 1;
+  background-color: transparent;
+  color: #fff;
+  font-size: larger;
+  font-weight: bold;
+  border: solid 2px #153434;
+  border-radius: 50px;
+  width: 70%;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: #153434;
+}
+
+.button:hover {
+  background-color: #fff;
+  text-decoration: none;
+  border: 1px #153434;
+  color: #000;
+}
+/*# sourceMappingURL=footprint.component.css.map */

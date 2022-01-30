@@ -1,0 +1,23 @@
+<div class="bg">
+    <h1 class="center">Tic Tac Toe Puzzle 5</h1>
+
+    <button class="center" nbButton outline status="danger" (click)="newGame()">Start new Game</button>
+
+
+    <h2 *ngIf="winner" class="center" style="font-size: 80%;">
+        <div *ngIf="winner == 'X'">Code: Depression<br>Depression
+            Depression involves recurrent, severe periods of clear-cut changes in mood, thought processes and motivation
+            lasting for a minimum of two weeks. Changes in thought processes typically include negative thoughts and
+            hopelessness. Depression also involves affects sleep/energy, appetite or weight.
+        </div>
+        <div *ngIf="winner == 'O'">Try again!</div>
+    </h2>
+
+    <div class="center" style="margin:10vh">
+        <main>
+            <app-tictactoe *ngFor="let val of squares; let i = index" [value]="val" (click)="makeMove(i)">
+
+            </app-tictactoe>
+        </main>
+    </div>
+</div>

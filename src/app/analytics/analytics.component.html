@@ -1,0 +1,106 @@
+<div class="myclass" style="display:flex;flex-direction: row;flex-wrap: wrap;">
+<!-- <div class="chart-wrapper col-md-4">
+    <canvas baseChart 
+        [datasets]="lineChartData" 
+        [labels]="lineChartLabels" 
+        [options]="lineChartOptions"
+        [colors]="lineChartColors" 
+        [legend]="lineChartLegend" 
+        [chartType]="lineChartType" 
+        [plugins]="lineChartPlugins">
+    </canvas>
+</div> -->
+<div class="chart-wrapper col-md-4">
+    <div style="text-align: center;">Your Carbon Footprint Division</div>
+    <canvas baseChart 
+    [data]="pieChartData" 
+    [labels]="pieChartLabels" 
+    [chartType]="pieChartType"
+    [options]="pieChartOptions"
+    [plugins]="pieChartPlugins"
+    [legend]="pieChartLegend">
+  </canvas>
+</div>
+
+
+<div class="chart-wrapper col-md-4">
+    <div style="text-align: center;">Your Green Activities</div>
+    <canvas baseChart 
+    [data]="doughnutChartData"
+    [labels]="doughnutChartLabels"
+    [chartType]="doughnutChartType">
+  </canvas>
+</div>
+
+<div class="chart-wrapper col-md-4">
+    <div style="text-align: center;">Your Portal Activity Breakdown</div>
+    <canvas baseChart
+    [datasets]="radarChartData"
+    [options]="radarChartOptions"
+    [labels]="radarChartLabels"
+    [chartType]="radarChartType">
+  </canvas>
+</div>
+
+<div class="chart-wrapper col-md-6">
+    <div style="text-align: center;">Carbon Footprint: December 2021</div>
+    <canvas baseChart
+    [datasets]="bubbleChartData"
+    [options]="bubbleChartOptions"
+   
+    [legend]="bubbleChartLegend"
+    [chartType]="bubbleChartType">
+  </canvas>
+</div>
+<div class="chart-wrapper col-md-6">
+    <div style="text-align: center;">Top Countries Carbon emissions(in GT)</div>
+    <canvas baseChart 
+    [datasets]="barChartData"
+    [labels]="barChartLabels"
+    [options]="barChartOptions"
+    [plugins]="barChartPlugins"
+    [legend]="barChartLegend"
+    [chartType]="barChartType">
+  </canvas>
+</div>
+</div>
+<section id="statistic" class="statistic-section one-page-section">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-xs-12 col-md-3">
+                <div class="counter">
+                    <i class="fa fa-cloud fa-2x stats-icon"></i>
+                    <h2 class="timer count-title count-number">20</h2>
+                    <div class="stats-line-black"></div>
+                    <p class="stats-text">KGs of Co2 generated</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3">
+                <div class="counter">
+                    <i class="fa fa-tree fa-2x stats-icon"></i>
+                    <h2 class="timer count-title count-number">5
+                    </h2>
+                    <div class="stats-line-black"></div>
+                    <p class="stats-text">Trees planted</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3">
+                <div class="counter">
+                    <i class="fa fa-clock-o fa-2x stats-icon"></i>
+                    <h2 class="timer count-title count-number">25</h2>
+                    <div class="stats-line-black"></div>
+                    <p class="stats-text">Green Activities</p>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-3">
+                <div class="counter">
+                    <i class="fa fa-laptop fa-2x stats-icon"></i>
+                    <h2 class="timer count-title count-number">17</h2>
+                    <div class="stats-line-black"></div>
+                    <p class="stats-text">Games Played</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

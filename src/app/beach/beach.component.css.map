@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,KAAK,CACL;EACI,MAAM,EAAC,KAAK;EACZ,KAAK,EAAC,KAAK;CACd;;AACD,AAAA,OAAO,CACP;EACI,MAAM,EAAC,IAAI;EACX,KAAK,EAAC,IAAI;CACb",
+    "sources": [
+        "beach.component.scss"
+    ],
+    "names": [],
+    "file": "beach.component.css"
+}

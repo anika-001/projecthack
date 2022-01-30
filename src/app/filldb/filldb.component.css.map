@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,GAAG,CACH;EACI,MAAM,EAAC,IAAI;EACX,KAAK,EAAC,KAAK;CACd",
+    "sources": [
+        "filldb.component.scss"
+    ],
+    "names": [],
+    "file": "filldb.component.css"
+}

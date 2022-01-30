@@ -1,0 +1,48 @@
+<div class="main">
+    <div class="card">
+        <div class="panel">
+            <div *ngFor="let i of colbuttons">
+                <div class="color" [ngClass]="{
+                    'red': i.red,
+                    'green': i.green,
+                    'blue': i.blue,
+                    'yellow': i.yellow,
+                    'pink': i.pink
+                }"></div>
+            </div>
+        </div>
+
+        <div class="panel">
+            <div *ngFor="let i of colors">
+                <div class="color colpan {{i}}" (click)="fill(i)"></div>
+            </div>
+        </div>
+
+        <div class="candb">
+            <div style="width: 100%; display: flex; justify-content: space-evenly;" *ngIf="!correctanswer">bulls:
+                {{bullsno}} cows: {{cowsno}} Puzzle 7</div>
+            <div style="width: 100%; display: flex; justify-content: space-evenly;" *ngIf="correctanswer">Code is:
+                PTSD<br>Post-traumatic stress disorder (PTSD): PTSD is a condition that can develop following a
+                traumatic and/or terrifying event, such as a sexual or physical assault, the unexpected death of a loved
+                one, or a natural disaster. People with PTSD often have lasting and frightening thoughts and memories of
+                the event, and tend to be emotionally numb.</div>
+            <div style="font-size: 80%;">
+                <br>
+                How to play:
+                <br>
+                <br>
+                The computer has a 3 colour code. Guess the 3 colours to get the answer to puzzle 3.
+                <br>
+                Bulls: The number of colours guessed in the right position.
+                <br>
+                Cows: The number of colours that are there but aren't in the right position.
+                <br>
+                Example: Code: Pink Red Red Your guess: Pink Pink Pink Cows: 0 Bulls: 1
+                <br>
+                Example: Code: Pink Red Red Your guess: Blue Pink Pink Cows: 1 Bulls: 0
+            </div>
+
+        </div>
+
+    </div>
+</div>

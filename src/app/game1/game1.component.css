@@ -1,0 +1,55 @@
+.bt-container {
+  display: inline-block;
+  position: relative;
+  background-image: url("../../assets/images/anatomy.png");
+  height: 80vh;
+  width: 30vw;
+  background-size: 100% 100%;
+}
+
+.bt-container img {
+  width: 100%;
+  height: auto;
+}
+
+.bt-container .btn {
+  width: 50px;
+  height: 50px;
+  background: #0492c2;
+  border-radius: 50%;
+  position: absolute;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.bt-container .btn:hover {
+  border: 5px solid wheat;
+}
+
+.rect-container {
+  display: none;
+  position: absolute;
+  background-color: wheat;
+  -webkit-text-decoration: black;
+          text-decoration: black;
+  text-align: center;
+  height: 8vh;
+  width: 10vw;
+  border: 1px solid #0492c2;
+}
+
+.cont {
+  margin-top: 95%;
+  margin-left: 95%;
+  background-color: #0492c2;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 150%;
+  border-radius: 12px;
+}
+/*# sourceMappingURL=game1.component.css.map */

@@ -1,0 +1,17 @@
+<div class ="main">
+    <!-- <div class ="header"></div> -->
+        <div class ="start">
+            <div class = "title">Games</div>
+            <div class = "boxes">
+                <div class ="box" *ngFor="let x of games" routerLink={{x.link}}>{{x.name}}</div>
+            </div>
+        </div>
+
+        <div class ="start">
+            <div class = "title">Comics</div>
+            <div class = "boxes">
+                <div class ="box" *ngFor="let x of comics" routerLink={{x.link}}>{{x.name}}</div>
+            </div>
+        </div>
+    
+</div>

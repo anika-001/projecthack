@@ -1,0 +1,53 @@
+.chart-wrapper{
+    margin:3vh 0vw 3vh 0vw;
+}
+.myclass{
+    margin-top: 5vh;
+}
+.statistic-section {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    
+}
+
+.count-title {
+   font-size: 50px;
+   font-weight: normal;
+   margin-top: 10px;
+   margin-bottom: 0;
+     text-align: center;
+     font-weight: bold;
+   color: #000;
+}
+
+.stats-text {
+   font-size: 15px;
+   font-weight: normal;
+   margin-top: 15px;
+   margin-bottom: 0;
+   text-align: center;
+     color: #000;
+     text-transform: uppercase;
+     font-weight: bold;
+}
+
+.stats-line-black {
+   margin: 12px auto 0;
+   width: 55px;
+   height: 2px;
+   background-color: #000;
+}
+.stats-icon {
+     font-size: 35px;
+     margin: 0 auto;
+   float: none;
+   display: table;
+   color: #000;
+}
+
+@media (max-width: 992px) {
+   .counter {
+       margin-bottom: 40px;
+   }
+}
+// refhttps://codepen.io/beeerrt/pen/GedwYq

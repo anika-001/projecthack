@@ -1,0 +1,69 @@
+<div class="main">
+    <div class="Thegifs" position="absolute">
+        <!-- <div style = "top: 50vh; left: 0; background-image: url(../../assets/images/hurray2.gif); background-size: 100% 100%; height: 20vh; width: 20vh;"></div> -->
+        <div id = "mulimg" style = "display: none; top: 50vh; left: 20vh; background-image: url(../../assets/images/hurray3.gif); background-size: 100% 100%; height: 40vh; width: 40vh;">X2!</div>
+        <div id = "corrimg" style = "display: none; top: 50vh; left: 80vh; background-image: url(../../assets/images/hurray4.gif); background-size: 100% 100%; height: 40vh; width: 40vh;"></div>
+    <!-- <img src="./../../assets/images/hurray3.gif"height="20%">
+    <img src="./../../assets/images/hurray4.gif" height="20%"> -->
+    </div>
+    <div class = "ppoints">+{{plus}}</div><div class = "npoints">{{minus}}</div>
+    <div class = "players">
+        <div class = "player" *ngFor = "let x of scores">
+            <div style="display: flex; font-size: 200%;">{{x.payload.doc.data().name}} : {{x.payload.doc.data().Score}}</div>
+            
+        </div>
+    </div>
+    <div class="board">
+        <div class="title">
+            <img class="" src="../../assets/images/jeopardy.png">
+            <div style = "display: flex; width: 100%; justify-content: space-evenly; align-items: center;">{{gamename}} 's game  <div class = "codeshow" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 100%; flex-basis: 50%; margin-top: 0%;">CODE: {{getcode()}}</div></div>
+            
+        </div>
+        <div class="topics">
+            <div class="topic"*ngFor = "let x of topicnames">{{x}}</div>
+        </div>
+        <div class="options">
+            <div class="rows" *ngFor = "let x of [0, 1, 2]">
+                <div class="optionboard"*ngFor = "let y of [0, 1, 2]" (click) = "question(x, y)">
+                    <div class = "blabla" *ngIf = "this.inarr((x*3)+y)"></div>
+                    &#8377; {{(y+1)*200}}
+                </div>
+            </div>
+        </div>
+       
+    </div>
+    <!-- <div style = "font-size: 200%;" *ngFor = "let x of scores">{{x.payload.doc.data().Score}}</div> -->
+    <!-- <div *ngIf = "popup" class="loader" (click) = "popup = false; startmusic()">
+        <model-viewer  interaction-policy="allow-when-focused" style="margin-left:13%"camera-controls src="./assets/images/jeopardy/scene.gltf" auto-rotate rotation-per-second="70deg">
+          </model-viewer>
+          <div class="text">JEOPARDY!</div>
+          <h1>This is Jeopardy!</h1>         
+    </div> -->
+    <!-- <audio autoplay="true" preload="auto" src="./../../assets/audio/Jeopardyintro.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio> -->
+    
+    <div class = "question" *ngIf = "picked">
+        <div class = "ques">
+            {{questionnow.payload.data().Question}}
+        </div>
+        <div class = "ansopt">
+            <div class = "option" *ngFor = "let x of optionsnow; let i = index" (click) = "check(i + 1)">
+                {{x}}
+            </div>
+        </div>
+    </div>
+
+    <div class = "disabled" *ngIf = "!status || !ismyquestion">
+
+    </div>
+    <!-- <div class = "custbutton" style = "position: absolute; top: 2vh; left: 2vw" (click) = "bla()">bla</div> -->
+    <div class = "custbutton" style = "position: absolute; top: 2vh; right: 2vw" *ngIf = "!status && noofplayers == maxplayer && generated" (click) = "startgame()">Start Game</div>
+
+    <app-scoreboard *ngIf = "gameend" style="position: absolute; top: 0; left: 0;"></app-scoreboard>
+    <div class = "custbutton end" (click) = "endgame()" *ngIf = "gameend">End game</div>
+    <div class = "codeshow" *ngIf = "!status" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 100%; flex-basis: 50%; margin-top: 0%; position: absolute; top: 0; left: 0; color: rgb(135, 138, 194); font-size: 200%;">Share this CODE: {{getcode()}}</div>
+    <div *ngIf = "!generated" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 100%; flex-basis: 50%; margin-top: 0%; position: absolute; top: 50vh; left: 40vw; color: white; font-size: 200%;">Generating questions.....</div>
+    <div *ngIf = "!status && noofplayers != maxplayer && generated" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 100%; flex-basis: 50%; margin-top: 0%; position: absolute; top: 50vh; left: 40vw; color: white; font-size: 200%;">Waiting for players.....</div>
+    <!-- <div class = "custbutton" style = "position: absolute; top: 2vh; right: 2vw" *ngIf = "status" (click) = "answer()">Answer</div> -->
+</div>

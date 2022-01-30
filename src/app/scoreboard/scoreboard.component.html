@@ -1,0 +1,22 @@
+<div class = "scoreboard">
+    <img src="./../../assets/images/hurray5.gif" height="100%">
+    <div class="board">
+        <div class = "title">
+            Scoreboard
+        </div>
+        <div class="scores">            
+            <div class="player" *ngFor="let x of scores; let i = index" [ngClass] = "{
+                'first': i == 0,
+                'second': i == 1,
+                'third': i == 2,
+                'fourth': i == 3
+            }">
+                <div style="font-size: 120%;">Place {{i + 1}}</div>
+                <div>Name: {{x.name}}</div>
+                <div>Score: {{x.Score}}</div>
+            </div>
+        </div>
+        
+    </div>
+    
+</div>

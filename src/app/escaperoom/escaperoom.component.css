@@ -1,0 +1,300 @@
+.main {
+  background-image: url("../../assets/images/spaceship.jpg");
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tablet {
+  height: 60px;
+  cursor: pointer;
+}
+
+.tablet img {
+  position: absolute;
+  top: 26vh;
+  left: 27vw;
+}
+
+.tictacblet img {
+  position: absolute;
+  top: 28vh;
+  left: 52vw;
+  cursor: pointer;
+}
+
+.circle {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  margin-top: 9%;
+  margin-right: 0.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.circle img {
+  position: absolute;
+  -webkit-animation: animate 6s;
+          animation: animate 6s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.triangle {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.triangle img {
+  position: absolute;
+  -webkit-animation: animate 8s;
+          animation: animate 8s;
+  -webkit-animation-duration: s;
+          animation-duration: s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.line {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.line img {
+  position: absolute;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    z-index: 10;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  25% {
+    z-index: 5;
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+  }
+}
+
+@keyframes animate {
+  0% {
+    z-index: 10;
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+  25% {
+    z-index: 5;
+    -webkit-transform: rotateY(90deg);
+            transform: rotateY(90deg);
+  }
+}
+
+.robot {
+  position: absolute;
+  height: 40vh;
+  width: 7vw;
+  top: 60vh;
+  left: 15vw;
+  cursor: pointer;
+}
+
+.robot:hover {
+  border: solid black;
+}
+
+.tablet:hover {
+  border: solid black;
+}
+
+.tictacblet:hover {
+  border: solid black;
+}
+
+.roboconvo {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 15vh;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+
+.form {
+  height: 30vh;
+  width: 10vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.ip {
+  width: 15vw;
+  -webkit-transform: rotateY(20deg) rotateZ(3deg);
+          transform: rotateY(20deg) rotateZ(3deg);
+  -webkit-perspective: 1px;
+          perspective: 1px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.forminp {
+  position: absolute;
+  top: 30vh;
+  left: 83vw;
+  height: 40vh;
+  width: 10vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.incorrect {
+  border-left: red solid thick;
+}
+
+.candbcross {
+  color: white;
+  position: absolute;
+}
+
+.arrow {
+  position: absolute;
+  height: 5vw;
+  width: 5vw;
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  background-image: url(../../assets/images/downarrow.png);
+  background-size: 100% 100%;
+}
+
+.down {
+  bottom: 2vh;
+  left: 47.5vw;
+}
+
+.right {
+  height: 3vw;
+  width: 3vw;
+  top: 40%;
+  left: 18vw;
+  -webkit-transform: rotateZ(-90deg);
+          transform: rotateZ(-90deg);
+}
+
+.left {
+  height: 3vw;
+  width: 3vw;
+  top: 40%;
+  left: 10vw;
+  -webkit-transform: rotateZ(90deg);
+          transform: rotateZ(90deg);
+}
+
+.door {
+  height: 3vw;
+  width: 3vw;
+  top: 45%;
+  left: 35vw;
+  -webkit-transform: rotateZ(-90deg);
+          transform: rotateZ(-90deg);
+}
+
+.leftconvo {
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 200%;
+}
+
+.roboconvo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.rightconvo {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  margin: 2%;
+}
+
+.op {
+  margin: 0%;
+}
+/*# sourceMappingURL=escaperoom.component.css.map */

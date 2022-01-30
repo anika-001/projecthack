@@ -1,0 +1,71 @@
+<div class="main1" >
+    <div class="main"*ngIf="myFlag">
+    <div class='floating-heading'style="color:#fff;"> Transform liters of Diesel, Petrol or LPG into CO2 Equivalent in Kg.</div>
+    
+    <br><br><br><br><br>
+    <div>
+    <div class="floating-form">
+        <div class="floating-label">      
+          <input class="floating-input" type="text" placeholder="Distance"[(ngModel)]="distance">
+          <span class="highlight"></span>
+          <label>Number of Litres of fuel used</label>
+        </div>
+        <div class="floating-label">  
+            <select class="floating-select" [(ngModel)]="car">
+                <option *ngFor="let option of a" [value]="option" placeholder="vehicle">
+                    {{option}}
+                  </option>
+              <!-- <option value="2">Boston</option>
+              <option value="3">Ohaio</option>
+              <option value="4">New York</option>
+              <option value="5">Washington</option> -->
+            </select>
+            <span class="highlight"></span>
+            <label>Type of Fuel Used</label>
+          </div>
+          <input type="button" value="Submit"(click)="savemyvals()" />
+        <!-- <div class="floating-label">      
+          <input class="floating-input" type="text" onclick="(this.type='time')" placeholder=" ">
+          <span class="highlight"></span>
+          <label>Time</label>
+        </div>
+    
+        <div class="floating-label">      
+          <input class="floating-input" type="text" onclick="(this.type='date')" placeholder=" ">
+          <span class="highlight"></span>
+          <label>Date</label>
+        </div>
+        <div class="floating-label">      
+          <input class="floating-input" type="password" placeholder=" ">
+          <span class="highlight"></span>
+          <label>Password</label>
+        </div>
+        <div class="floating-label">  
+          <select class="floating-select" onclick="this.setAttribute('value', this.value);" value="">
+            <option value=""></option>
+            <option value="1">Alabama</option>
+            <option value="2">Boston</option>
+            <option value="3">Ohaio</option>
+            <option value="4">New York</option>
+            <option value="5">Washington</option>
+          </select>
+          <span class="highlight"></span>
+          <label>Select</label>
+        </div>
+    
+        <div class="floating-label">      
+          <textarea class="floating-input floating-textarea" placeholder=" "></textarea>
+          <span class="highlight"></span>
+          <label>Textarea</label>
+        </div> -->
+     
+    </div>
+    </div>
+    </div>
+    <div *ngIf="!myFlag">
+        <div class="myglass"style="color:#fff">
+          It equivalents {{co2}} <span style="font-size: -100%;">Kgs of Co2</span>
+        </div>
+        </div>
+    </div>
+    

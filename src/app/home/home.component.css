@@ -1,0 +1,10 @@
+iframe {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  margin: auto;
+  left: 0;
+  border: none;
+}
+/*# sourceMappingURL=home.component.css.map */
